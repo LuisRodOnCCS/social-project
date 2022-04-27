@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Share+Tech+Mono&display=swap');
+/* 
+
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
+
+*/
+
+.main-wrapper {
+  max-width: 1920px !important;
+  margin: 0 auto;
+}
+
+.max-container {
+  max-width: 1920px;
+  max-height: 768px;
+}
+
+body {
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+p {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 22px;
+}
+
+#animation_container {
+  transition: opacity .5s ease-in-out;
+  /* width: 100% !important; */
+}
+
+.welcome {
+  position: absolute;
+  right: calc(14%);
+  top: calc(35%);
+  z-index: 3;
+}
+
+.welcome .h1name {
+  font-size: calc(2.6rem);
+  text-shadow: 0 0 3px rgba(0, 0, 0, .75);
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  .welcome {
+    right: calc(14%);
+  }
+  .welcome .h1name {
+    font-size: calc(1.6rem);
+  }
+  
+  .welcome p {
+    font-size: calc(1.2em);
+  }
+}
+
+@media (min-width:560px) and (max-width:768px) {
+  .welcome {
+    right: calc(8%);
+  }
+  .welcome .h1name {
+    font-size: calc(1.6rem);
+  }
+  
+  .welcome p {
+    font-size: calc(1.2em);
+  }
+}
+
+@media (max-width:559px) {
+  .welcome {
+    right: calc(10%);
+  }
+  .welcome .h1name {
+    font-size: calc(1.2rem);
+  }
+  
+  .welcome p {
+    font-size: calc(1rem);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: rgb(21, 128, 235);
+  }
+  50% {
+    color: rgb(21, 235, 67);
+  }
+  100% {
+    color: rgb(21, 128, 235);
+  }
+}
